@@ -57,3 +57,9 @@ Custom Servlet 구현
 - 클라이언트 요청 시 로직을 수행할 servlet interface를 구현한 servelt 생성
 - 웹 요청 URL path와 대상 Servlet 매핑을 위한 @WebServlet Annotation 적용
 - 클라이언트 요청 시, 서블릿 컨테이너에 의해 init(), service() 메서드가 실행되며, 종료 시 destroy 메서드가 호출되어 자원을 반납
+
+### Step 2 : GenericServlet을 이용한 사칙 연산기 구현
+#### Step2의 구현 내용
+- 클라이언트 요청 시 로직을 수행할 GenericServlet 추상클래스의 service()를 구현한 servelt 생성
+- 웹 요청 URL path와 대상 Servlet 매핑을 위한 @WebServlet Annotation 적용
+- 클라이언트 요청 시, service() 메서드에 작성된 비지니스 로직을 수행
